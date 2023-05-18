@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/linkedinFragment"
+        android:title="@string/linkedin"
+        android:icon="@drawable/linkedin_svgrepo_com"
+        />
+    <item
+        android:id="@+id/facebookFragment"
+        android:title="@string/facebook"
+        android:icon="@drawable/facebook_svgrepo_com"/>
+    <item
+        android:id="@+id/githubFragment"
+        android:title="@string/github"
+        android:icon="@drawable/github_142_svgrepo_com"/>
+
+</menu>

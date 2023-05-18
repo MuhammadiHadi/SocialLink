@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Profile"
+
+
+        android:icon="@drawable/ic_baseline_home_24"/>
+    <item
+        android:id="@+id/linkedin"
+        android:title="@string/linkedin"
+        android:icon="@drawable/linkedin_svgrepo_com"
+        />
+    <item
+        android:id="@+id/facebook"
+        android:title="@string/facebook"
+        android:icon="@drawable/facebook_svgrepo_com"/>
+    <item
+        android:id="@+id/github"
+        android:title="@string/github"
+        android:icon="@drawable/github_142_svgrepo_com"/>
+</menu>
