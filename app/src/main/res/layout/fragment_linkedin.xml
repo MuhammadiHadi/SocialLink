@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginHorizontal="16sp"
+
     android:layout_marginTop="30dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -10,6 +10,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/container"
     android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    android:background="@color/white"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     android:layout_height="wrap_content">
@@ -18,7 +20,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/hadi"
-        android:layout_marginTop="40sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
@@ -49,6 +52,7 @@
         android:id="@+id/divider"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
         app:layout_constraintTop_toBottomOf="@id/container"
         android:layout_width="match_parent"
         app:dividerColor="@android:color/darker_gray"
@@ -60,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fillViewport="true"
+        android:layout_marginHorizontal="16sp"
         app:layout_constraintTop_toBottomOf="@id/divider">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -80,13 +85,13 @@
                 android:textColor="@color/black"
                 app:layout_constraintTop_toTopOf="parent"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="12dp"/>
             <TextView
                 android:id="@+id/face"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="textStart"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="15dp"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toBottomOf="@+id/dev"
@@ -95,11 +100,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="textStart"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toBottomOf="@+id/face"
-                android:text="Depending on the goal of your LinkedIn profile, your LinkedIn summary should include 3-5 sentences that describe: your years of experience in your industry, your area of expertise, the types of organizations you've worked with, your skills, and what you're most known for professionally."/>
+                android:text="Hello, and welcome to my LinkedIn profile! I'm Muhammad Hadi, a dedicated Android developer with a passion for crafting exceptional mobile experiences.With a solid background in Java and Kotlin, I possess extensive expertise in developing native Android applications. My goal is to create innovative solutions that combine elegant design, seamless functionality, and optimal performance.
+Throughout my career, I have successfully delivered a wide range of Android projects, including social networking apps, e-commerce platforms, and utility tools. I excel at building intuitive user interfaces, implementing complex business logic, and integrating APIs for seamless data exchange.
+I am a continuous learner, dedicated to staying up-to-date with the latest trends and advancements in the Android ecosystem. I actively engage in online communities, attend tech conferences, and explore open-source projects to expand my knowledge and skills. Let's connect and create remarkable Android experiences together!
+\n\n
+Happy coding! 😊"/>
 
 
 

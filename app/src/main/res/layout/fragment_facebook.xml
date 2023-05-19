@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginHorizontal="16sp"
     android:layout_marginTop="30dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -10,6 +9,8 @@
   <androidx.constraintlayout.widget.ConstraintLayout
       android:id="@+id/container"
       android:layout_width="match_parent"
+      android:layout_marginTop="30dp"
+      android:background="@color/white"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -18,8 +19,9 @@
           android:id="@+id/profile_image"
           android:layout_width="40dp"
           android:layout_height="40dp"
+          android:layout_marginLeft="16sp"
           android:src="@drawable/hadi"
-          android:layout_marginTop="40sp"
+          android:layout_marginTop="25sp"
           app:layout_constraintTop_toTopOf="parent"
           app:layout_constraintStart_toStartOf="parent"
           />
@@ -50,6 +52,7 @@
         android:id="@+id/divider"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16sp"
         app:layout_constraintTop_toBottomOf="@id/container"
         android:layout_width="match_parent"
         app:dividerColor="@android:color/darker_gray"
@@ -61,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fillViewport="true"
+        android:layout_marginHorizontal="16sp"
         app:layout_constraintTop_toBottomOf="@id/divider">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -81,14 +85,14 @@
                 android:textColor="@color/black"
                 app:layout_constraintTop_toTopOf="parent"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="12dp"/>
             <TextView
                 android:id="@+id/face"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="textStart"
-                android:layout_marginTop="25dp"
-                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:textSize="14sp"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toBottomOf="@+id/dev"
                 android:text="To visit our Facebook account, please click on the Email Top:"/>
@@ -96,11 +100,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="textStart"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toBottomOf="@+id/face"
-                android:text="Facebook, American online social network service that is part of the company Meta Platforms. Facebook was founded in 2004 by Mark Zuckerberg, Eduardo Saverin, Dustin Moskovitz, and Chris Hughes, all of whom were students at Harvard University. Facebook became the largest social network in the world, "/>
+                android:text="Hello everyone! I'm Muhammad Hadi a passionate Android developer with a focus on creating robust and user-friendly mobile applications. I have a strong command of Java and Kotlin, along with hands-on experience in developing Android apps using the latest tools and technologies. My goal is to deliver high-quality apps that provide seamless experiences to users.Throughout my career, I've worked on diverse projects, including social networking apps, e-commerce platforms, and productivity tools. I am well-versed in developing responsive user interfaces, implementing complex business logic, and integrating APIs for seamless data exchange.
+
+ Let's connect and stay in touch! Feel free to reach out to me on Facebook for any Android development-related discussions, collaboration opportunities, or if you simply want to connect with fellow developers.Looking forward to engaging with the vibrant Android developer community and creating amazing apps together!
+\n\nHappy coding! 😊"/>
 
 
 

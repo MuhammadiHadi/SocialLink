@@ -14,6 +14,7 @@
     <string name="android_developer">Android Developer</string>
     <string name="android_developer_it_last_1_year">android developer it last 1 year .</string>
     <string name="muhammad_hadi">Muhammad Hadi</string>
+    <string name="dec">Hello there! I\'m Muhammad hadi, an experienced Android developer passionate about creating innovative mobile applications that enhance user experiences.My GitHub repositories are a reflection of my dedication to building high-quality Android apps using the latest technologies and best practices. I strive to write clean, maintainable code and follow design patterns such as MVVM or MVP to ensure scalability and modularity.With a solid understanding of Java and Kotlin, I have developed a wide range of apps, including e-commerce platforms, social networking apps, and utility tools. I also have experience integrating third-party APIs, implementing Firebase services, and optimizing app performance. I believe in collaborative development and have experience working in agile teams, utilizing version control systems like Git to ensure seamless code collaboration and project management. Besides my practical experience, I keep myself updated with the latest trends and developments in the Android ecosystem by actively participating in online communities, attending tech conferences, and exploring open-source projects. .</string>
     <string-array name="Skills">
         <item>Native development</item>
         <item>Flutter</item>

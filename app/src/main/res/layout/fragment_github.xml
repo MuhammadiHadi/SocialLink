@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginHorizontal="16sp"
     android:layout_marginTop="30dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -11,7 +10,9 @@
   <androidx.constraintlayout.widget.ConstraintLayout
       android:id="@+id/match_constraint"
       android:layout_width="match_parent"
+      android:layout_marginTop="30dp"
       android:layout_height="wrap_content"
+      android:background="@color/white"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent"
@@ -23,8 +24,9 @@
           android:id="@+id/profile_image"
           android:layout_width="40dp"
           android:layout_height="40dp"
+          android:layout_marginLeft="16sp"
           android:src="@drawable/hadi"
-          android:layout_marginTop="40sp"
+          android:layout_marginTop="25sp"
           app:layout_constraintTop_toTopOf="parent"
           app:layout_constraintStart_toStartOf="parent"
           />
@@ -55,6 +57,7 @@
     android:id="@+id/divider"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginHorizontal="16sp"
     app:layout_constraintTop_toBottomOf="@id/match_constraint"
     android:layout_width="match_parent"
     app:dividerColor="@android:color/darker_gray"
@@ -63,13 +66,18 @@
 
 <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
     android:fillViewport="true"
+    android:scrollbars="none"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintTop_toBottomOf="@id/divider">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:layout_marginHorizontal="16sp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
@@ -85,14 +93,14 @@
             android:textSize="18sp"
             app:layout_constraintTop_toTopOf="parent"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="12dp"/>
         <TextView
             android:id="@+id/face"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="textStart"
-            android:layout_marginTop="25dp"
-            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textSize="14sp"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@+id/dev"
             android:text="To visit our Github account, please click on the Email Top:"/>
@@ -100,11 +108,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="textStart"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:textSize="14sp"
             android:textColor="@color/black"
             app:layout_constraintTop_toBottomOf="@+id/face"
-            android:text="GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests.."/>
+            android:text="@string/dec"/>
 
 
 
