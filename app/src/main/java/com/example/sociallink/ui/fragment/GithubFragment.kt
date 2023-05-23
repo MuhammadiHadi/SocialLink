@@ -25,6 +25,7 @@ class GithubFragment : Fragment() {
             val githubIntent = Intent(Intent.ACTION_VIEW , Uri.parse(githubUrl))
             startActivity(githubIntent)
         }
+
         return binding.root
 
     }

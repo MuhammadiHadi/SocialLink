@@ -35,4 +35,5 @@
             android:label="fragment_location"
             tools:layout="@layout/fragment_location" />
 
+
 </navigation>

@@ -62,7 +62,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.home ,
                 R.id.linkedin,
                 R.id.facebook,
-                R.id.github->{
+                R.id.github,
+                R.id.location->{
                          binding.ivMenu.visibility = View.VISIBLE
                         binding.navigationView.visibility = View.VISIBLE
 //                    binding.ivLogo.visibility = View.VISIBLE
