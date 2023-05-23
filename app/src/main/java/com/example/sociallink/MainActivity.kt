@@ -39,15 +39,16 @@ class MainActivity : AppCompatActivity() {
         binding.navigationView.setupWithNavController(navController)
 
         //drawer
-        appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.home,
-                R.id.linkedin,
-                R.id.facebook,
-                R.id.github
-            ),
-            binding.drawerLayout
-        )
+////        appBarConfiguration = AppBarConfiguration(
+////            setOf(
+////                R.id.home,
+////                R.id.linkedin,
+////                R.id.facebook,
+////                R.id.github,
+////
+////            ),
+//            binding.drawerLayout
+//        )
         //menu item click handle
         binding.navView.setupWithNavController(navController)
 
@@ -59,13 +60,13 @@ class MainActivity : AppCompatActivity() {
         ) {
             when (destination.id) {
                 R.id.home ,
-                R.id.linkedin ,
-                R.id.facebook ,
-                R.id.github -> {
-                    binding.ivMenu.visibility = View.VISIBLE
-                    binding.navigationView.visibility = View.VISIBLE
+                R.id.linkedin,
+                R.id.facebook,
+                R.id.github->{
+                         binding.ivMenu.visibility = View.VISIBLE
+                        binding.navigationView.visibility = View.VISIBLE
 //                    binding.ivLogo.visibility = View.VISIBLE
-                }
+            }
                 else -> {
                     binding.ivMenu.visibility = View.GONE
                     binding.navigationView.visibility = View.GONE
@@ -99,7 +100,9 @@ class MainActivity : AppCompatActivity() {
             isOpen = true
         }
         val view = binding.navView.getHeaderView(0)
+
         val hBinding: HeaderLayoutBinding = HeaderLayoutBinding.bind(view)
+
         hBinding.ivBackDrawer.setOnClickListener {
             binding.drawerLayout.closeDrawer(GravityCompat.START)
         }
