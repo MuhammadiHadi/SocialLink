@@ -26,6 +26,8 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.libraries.places.api.Places
 import android.content.Context.*
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Canvas
 import android.location.Location
 import android.provider.Settings
 import android.widget.ImageView
@@ -33,7 +35,7 @@ import com.google.android.gms.location.*
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.SupportMapFragment
-
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
 
 
 class LocationFragment : Fragment(), OnMapReadyCallback {
@@ -101,8 +103,10 @@ class LocationFragment : Fragment(), OnMapReadyCallback {
                     } else {
                         currentLocation = LatLng(location.latitude, location.longitude)
                         mMap.clear()
-                     val marker=  mMap.addMarker(MarkerOptions().position(currentLocation).title("Current location"))
+                     val marker=  mMap.addMarker(MarkerOptions().position(currentLocation).title("Current location")
+                         .icon(BitmapDescriptorFactory.fromBitmap(createCustomMarker())))
                         marker!!.showInfoWindow()
+
                         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 16F))
 
                     }
@@ -181,6 +185,28 @@ class LocationFragment : Fragment(), OnMapReadyCallback {
                 getLastLocation()
             }
         }
+    }
+    private fun createCustomMarker(): Bitmap {
+        val markerView = LayoutInflater.from(requireContext()).inflate(R.layout.custom_marker_layout, null)
+        val markerImageView = markerView.findViewById<ImageView>(R.id.markerImageView)
+
+        // Set the desired image to the ImageView
+        markerImageView.setImageResource(R.drawable.ic_baseline_person_pin_24)
+
+        // Convert the marker view to a Bitmap
+        val markerWidth = resources.getDimensionPixelSize(R.dimen.custom_marker_width)
+        val markerHeight = resources.getDimensionPixelSize(R.dimen.custom_marker_height)
+        markerView.measure(
+            View.MeasureSpec.makeMeasureSpec(markerWidth, View.MeasureSpec.EXACTLY),
+            View.MeasureSpec.makeMeasureSpec(markerHeight, View.MeasureSpec.EXACTLY)
+        )
+        markerView.layout(0, 0, markerView.measuredWidth, markerView.measuredHeight)
+
+        val bitmap = Bitmap.createBitmap(markerView.measuredWidth, markerView.measuredHeight, Bitmap.Config.ARGB_8888)
+        val canvas = Canvas(bitmap)
+        markerView.draw(canvas)
+
+        return bitmap
     }
 }
 
